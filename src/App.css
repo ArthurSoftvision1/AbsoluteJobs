@@ -162,6 +162,21 @@ a sup {
   cursor: pointer;
 }
 
+.zoeken-button:hover {
+  background-color: #6e737e;
+  border: 2px solid #6e737e;
+}
+
+.zoeken-button i {
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 9px;
+  margin-right: 5px;
+  font-weight: normal;
+  vertical-align: top;
+  display: inline-block;
+}
+
 .input {
   width: 45%;
   padding: 24px 10px;
@@ -178,6 +193,100 @@ a sup {
   margin-bottom: 28px;
 }
 
+.left-align {
+  text-align: left;
+}
+
+.vacancy-image {
+  width: 100%;
+}
+
+h2.left-align {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.heading-jobs {
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.jobs-text {
+  font-size: 17px;
+  text-align: left;
+  padding-left: 61px;
+  padding-right: 237px;
+}
+
+.recent-title {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.vacancies-section {
+  padding-top: 55px;
+  font-size: 17px;
+}
+
+.no-padding {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.subscribe-form {
+  border: 1px solid #ececec;
+  display: table;
+  width: 70%;
+}
+
+.field-input {
+  font-size: 17px;
+  padding: 23px 24px 25px 24px;
+  position: relative;
+  width: 100%;
+  border: 0;
+  outline: 0;
+}
+
+.field-input-wrap {
+  position: relative;
+  display: flex;
+}
+
+.left-section {
+  width: 90%;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 8px;
+}
+
+.bottom {
+  margin-bottom: 80px;
+}
+
+.main-action {
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-size: 18px;
+  padding: 12px 15px;;
+}
+
+.field {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.base-form {
+  margin: 0 auto;
+  text-align: left;
+}
+
 .title-one {
   color: #f09;
   font-size: 50px;
@@ -186,8 +295,46 @@ a sup {
   margin-bottom: 50px;
 }
 
+.central-text h3 {
+  color: #00182c;
+  font-weight: bold;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.text-size {
+  font-size: 17px;
+}
+
+.bottom-distance {
+  margin-bottom: 100px;
+}
+
+.left-side {
+  text-align: left;
+  margin-top: 65px;
+}
+
+.left-button {
+  padding-left: 61px;
+}
+
 .left-border {
-  border-left: 1px solid grey;
+  border-left: 1px solid #ececec;
+}
+
+.left {
+  padding-left: 237px;
+  padding-right: 61px;
+}
+
+.face {
+  margin-bottom: 0px;
+}
+
+.right {
+  padding-right: 237px;
+  padding-left: 61px;
 }
 
 .social-item {
@@ -197,16 +344,15 @@ a sup {
 }
 
 .i {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: transparent;
+    background-repeat: no-repeat;
 }
 
 .i-phone{
   width: 19px;
-  height: 28px;
+  height: 27px;
   background-image: url('./phone.png');
 }
 
@@ -228,36 +374,71 @@ a sup {
   text-decoration: none;
 }
 
+.contact {
+  margin-right: 20px;
+}
+
+.lin {
+    margin-top: 21px;
+    margin-right: 25px
+}
+
 .facebook {
   background: #3a589e;
-  padding: 26px;
+  padding: 27px;
 }
 
 .linkedin {
   background: #007bb6;
-  padding: 25px;
+  padding: 27px;
 }
 
 .i-facebook {
     background-image: url('./facebook.png');
     width: 100%;
-    height: 21px;
+    height: 23px;
 }
 
 .i-linkedin {
     background-image: url('./linkedin.png');
     width: 21px;
-    height: 21px;
+    height: 22px;
 }
 
-.social-wap {
-  position: absolute;
-  width: 100%;
+.social-wrap {
+  position: relative;
+  top: 43px;
+  z-index: 2
 }
 
 .footer-links {
+  padding-top: 100px;
   position: relative;
   background: #00182c;
+}
+
+.made-by span {
+  color: white;
+}
+
+.down-area {
+  margin-top: 55px;
+  margin-bottom: 60px;
+}
+
+.footer-list {
+  list-style-type: none;
+  color: white;
+  display: inline-flex;
+}
+
+.footer-list li {
+  padding-right: 16px;
+}
+
+.footer-list li a {
+  color: white;
+  cursor: pointer;
 }
 
 .footer-links:after {
@@ -272,9 +453,39 @@ a sup {
   background: #f09;;
 }
 
+.grey-link {
+  color: #6e737e;
+  cursor: pointer;
+}
+
+.white-links {
+  color: white;
+  cursor: pointer;
+}
+
+.white-links:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.grey-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.rows-space {
+  line-height: 0.0;
+  color: white;
+}
+
 .pink-links {
   color: #f09;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.pink-links:hover {
+  color: #ff66c2;
 }
 
 .language-switcher {
@@ -300,7 +511,7 @@ a sup {
 }
 
 .fa-caret-down:before {
-  content: "";
+  content: "\274C";
   border-radius: 3px;
 }
 

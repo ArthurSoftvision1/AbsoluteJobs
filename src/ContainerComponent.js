@@ -10,7 +10,7 @@ import CentralTextComponent from './CentralTextComponent.js'
 import RegisterInputComponent from './RegisterInputComponent.js'
 import FooterComponent from './FooterComponent.js'
 
-class Header extends Component {
+class Container extends Component {
   render() {
     return (
       <div className="header-section">
@@ -31,4 +31,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Container;

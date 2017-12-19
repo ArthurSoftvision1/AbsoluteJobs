@@ -7,8 +7,8 @@ class Vacancies extends Component {
     return (
        <div className="emloyees-vacancies">
            <div className="row">
-              <div className="col-md-6">
-                <h2>recente vacantures</h2>
+              <div className="col-md-6 vacancies-section">
+                <h2 className="recent-title">recente vacatures</h2>
                 <div className="locations">
                   <a className="pink-links">Bullman vaste namlddag!(m/v)</a>
                   <p>Brugge - Dagwerk</p>
@@ -29,21 +29,21 @@ class Vacancies extends Component {
                 </div>
               </div>
 
-               <div className="col-md-6">
-                <img src="https://s3.eu-central-1.amazonaws.com/absolutejobs-files-dev/2016/11/03/0d4b75e9a0054c3299d16178.jpeg" alt="interview image" />
+               <div className="col-md-6 no-padding">
+                <img className="vacancy-image" src="https://s3.eu-central-1.amazonaws.com/absolutejobs-files-dev/2016/11/03/0d4b75e9a0054c3299d16178.jpeg" alt="interview image" />
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-md-6">
-                  <img src="https://s3.eu-central-1.amazonaws.com/absolutejobs-files-dev/2016/11/03/69b43db90ccb5f31d5bf232c.jpeg" alt="team" />
+            <div className="row bottom-distance">
+              <div className="col-md-6 no-padding">
+                  <img className="vacancy-image" src="https://s3.eu-central-1.amazonaws.com/absolutejobs-files-dev/2016/11/03/69b43db90ccb5f31d5bf232c.jpeg" alt="team" />
                 </div>
 
-                 <div className="col-md-6">
-                   <h2>werken bij absolute jobs</h2>
-                   <p>We investeren in non-stop training en moedigen onze werknemers aan om via een intensieve begeleiding hun loopbaan verder te ontwikkelen binnen de lokale arbeidsmarkt. Wij geloven dat een tevreden werknemer een betere werknemer is.</p>
+                 <div className="col-md-6 left-side">
+                   <h2 className="heading-jobs right">werken bij absolute jobs</h2>
+                   <p className="jobs-text">We investeren in non-stop training en moedigen onze werknemers aan om via een intensieve begeleiding hun loopbaan verder te ontwikkelen binnen de lokale arbeidsmarkt. Wij geloven dat een tevreden werknemer een betere werknemer is.</p>
 
-                   <a className="pink-links">Kom meer te weten</a>
+                   <a className="pink-links left-button">Kom meer te weten</a>
                 </div>
             </div>
         </div>

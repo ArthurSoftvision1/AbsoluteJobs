@@ -16,7 +16,7 @@ class SignForm extends Component {
                 <li><a>spontaan solliciteren </a></li>
             </ul>
             <button className="zoeken-button" type="submit">
-                <i class="fa fa-search"></i>
+                <i className="fa fa-search" aria-hidden="true"></i>
                 zoeken
             </button>
          </form>
