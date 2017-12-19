@@ -48,6 +48,18 @@ body {
   background: #f09;
 }
 
+.pink-bar:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 10px;
+  height: 1px;
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+}
+
 .under-text {
   padding: 30px 10px 10px;
 }
@@ -58,6 +70,10 @@ body {
   line-height: 18px;
   margin-bottom: 4px;
   font-weight: 600;
+}
+
+.left-align {
+  text-align: left;
 }
 
 .black-text {
@@ -127,6 +143,10 @@ a sup {
   font-size: 14px;
 }
 
+.form-link {
+  margin-left: 30px;
+}
+
 .job-search-form {
   position: relative;
   background: #f09;
@@ -148,11 +168,12 @@ a sup {
 
 .links {
   display: inline-flex;
+  width: 100%;
 }
 
 .zoeken-button {
   position: absolute;
-  top: 168px;
+  top: 186px;
   right: 31px;
   border: 2px solid #00182c;
   background-color: #00182c;
@@ -175,6 +196,10 @@ a sup {
   font-weight: normal;
   vertical-align: top;
   display: inline-block;
+}
+
+.inputs {
+  margin-bottom: 20px;
 }
 
 .input {
@@ -433,24 +458,13 @@ h2.left-align {
 }
 
 .footer-list li {
-  padding-right: 16px;
+    padding-right: 19px;
+    font-size: 13px;
 }
 
 .footer-list li a {
   color: white;
   cursor: pointer;
-}
-
-.footer-links:after {
-  content: '';
-  display: block;
-  position: relative;
-  top: 50;
-  left: 10px;
-  bottom: 20;
-  height: 1px;
-  width: 270px;
-  background: #f09;;
 }
 
 .grey-link {
@@ -572,7 +586,278 @@ h2.left-align {
     margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/*mobiles*/
+@media screen and (max-width: 480px) {
+
+  .center-align {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-list {
+    display: block;
+  }
+
+  .subscribe-form {
+    border: 1px solid #ececec;
+    display: table;
+    width: 90%;
+  }
+
+  .vacancies-section {
+    font-size: 17px;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .left {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .right {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .bottom-distance {
+    margin-bottom: 50px;
+  }
+
+  .jobs-text {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .left-button {
+    padding-left: 45px;
+  }
+
+  .central-text h3 {
+    color: #00182c;
+    font-weight: bold;
+    width: 84%;
+    margin: 0 auto;
+  }
+
 }
+
+@media screen and (max-width: 768px) {
+
+  .center-align {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-list {
+    display: block;
+  }
+
+  .subscribe-form {
+    border: 1px solid #ececec;
+    display: table;
+    width: 90%;
+  }
+
+  .vacancies-section {
+    font-size: 17px;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .left {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .right {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .bottom-distance {
+    margin-bottom: 50px;
+  }
+
+  .jobs-text {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .left-button {
+    padding-left: 45px;
+  }
+
+  .central-text h3 {
+    color: #00182c;
+    font-weight: bold;
+    width: 84%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .center-align {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-list {
+    display: block;
+  }
+
+  .subscribe-form {
+    border: 1px solid #ececec;
+    display: table;
+    width: 90%;
+  }
+
+  .vacancies-section {
+    font-size: 17px;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .left {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .right {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .bottom-distance {
+    margin-bottom: 50px;
+  }
+
+  .jobs-text {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .left-button {
+    padding-left: 45px;
+  }
+
+  .central-text h3 {
+    color: #00182c;
+    font-weight: bold;
+    width: 84%;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+.center-align {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-list {
+    display: block;
+  }
+
+  .subscribe-form {
+    border: 1px solid #ececec;
+    display: table;
+    width: 90%;
+  }
+
+  .vacancies-section {
+    font-size: 17px;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .left {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .right {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .bottom-distance {
+    margin-bottom: 50px;
+  }
+
+  .jobs-text {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .left-button {
+    padding-left: 45px;
+  }
+
+  .central-text h3 {
+    color: #00182c;
+    font-weight: bold;
+    width: 84%;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (min-width: 1300px) {
+
+  .center-align {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-list {
+    display: inline-flex;
+  }
+
+  .subscribe-form {
+    border: 1px solid #ececec;
+    display: table;
+    width: 90%;
+  }
+
+  .vacancies-section {
+    font-size: 17px;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .left {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .right {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .bottom-distance {
+    margin-bottom: 50px;
+  }
+
+  .jobs-text {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .left-button {
+    padding-left: 45px;
+  }
+
+  .central-text h3 {
+    color: #00182c;
+    font-weight: bold;
+    width: 84%;
+    margin: 0 auto;
+  }
+
+}
+

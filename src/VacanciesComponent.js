@@ -39,7 +39,7 @@ class Vacancies extends Component {
                   <img className="vacancy-image" src="https://s3.eu-central-1.amazonaws.com/absolutejobs-files-dev/2016/11/03/69b43db90ccb5f31d5bf232c.jpeg" alt="team" />
                 </div>
 
-                 <div className="col-md-6 left-side">
+                 <div className="col-md-6 col-xs-12 left-side center">
                    <h2 className="heading-jobs right">werken bij absolute jobs</h2>
                    <p className="jobs-text">We investeren in non-stop training en moedigen onze werknemers aan om via een intensieve begeleiding hun loopbaan verder te ontwikkelen binnen de lokale arbeidsmarkt. Wij geloven dat een tevreden werknemer een betere werknemer is.</p>
 
