@@ -12,7 +12,7 @@ class HeaderMenu extends Component {
                 </div>
                 <a className="burger-nav"> </a>
             </div>
-            <div className="col-md-6 wrapper">
+            <div id="hamb" className="col-md-6 wrapper">
                 <div className="wrap-menu open">
                     <div className="main-menu visible-lg">
                         <ul className="menu-list">
@@ -25,7 +25,7 @@ class HeaderMenu extends Component {
                     <div className="dropdown language-switcher visible-lg">
                         <div className="active-lang">
                             <i className="flag flag-be"> </i>
-                            <span className="label">Belgium</span>
+                            <span id="country" className="label country">Belgium</span>
                             <i className="fa fa-caret-down"> </i>
                         </div>
                         <div className="dropdown-body">
@@ -40,19 +40,19 @@ class HeaderMenu extends Component {
                     <nav role="navigation hidden-small">
                         <div id="menuToggle" class="hidden-small">
                             <input type="checkbox" />
-                            {/*<div class="hamburger">*/}
+                            <div className="style-hamburger">
                                 <span class="hidden-small"></span>
                                 <span class="hidden-small"></span>
                                 <span class="hidden-small"></span>
-                            {/*</div>*/}
+                            </div>
                             <ul id="menu">
-                            <li className="link-item"><a>jobs<sup>751</sup></a></li>
-                            <li className="link-item"><a>voor werknemers</a></li>
-                            <li className="link-item"><a>voor werkgevers</a></li>
-                            <li className="link-item"><a>over uns</a></li>
-                            <li className="link-item"><a>werken bij absolute jobs</a></li>
-                            <li className="link-item"><a>contact</a></li>
-                            <li className="link-item"><a>login</a></li>
+                            <li className="link-item "><a className="jobs">jobs<sup>751</sup></a></li>
+                            <li className="link-item "><a className="jobs">voor werknemers</a></li>
+                            <li className="link-item "><a className="jobs">voor werkgevers</a></li>
+                            <li className="link-item"><a className="menu-color">over uns</a></li>
+                            <li className="link-item"><a className="menu-color">werken bij absolute jobs</a></li>
+                            <li className="link-item"><a className="menu-color">contact</a></li>
+                            <li className="link-item"><a className="menu-color">login</a></li>
                             <li className="link-item"> <div className="dropdown language-switcher-mobile">
                         <div className="active-lang">
                             <i className="flag flag-be"> </i>
