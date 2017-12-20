@@ -181,6 +181,7 @@ a sup {
   padding: 10px 20px;
   font-weight: bold;
   cursor: pointer;
+  font-size: 23px;
 }
 
 .zoeken-button:hover {
@@ -380,7 +381,16 @@ h2.left-align {
   height: 27px;
   background-image: url('./phone.png');
 }
-
+.search-image {
+  background-image: url('./search.png');
+   background-repeat: no-repeat;
+  width: 18px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+  margin-top: 11px;
+}
 .phone {
     font-weight: bold;
     background: #f09;
@@ -588,6 +598,34 @@ h2.left-align {
 
 /*mobiles*/
 @media screen and (max-width: 480px) {
+  .pink-bar:before {
+      display: none;
+  }
+  .zoeken-button {
+    position: absolute;
+    top: 257px;
+    right: 31px;
+    border: 2px solid #00182c;
+    background-color: #00182c;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .input.sector,
+  .input.regio {
+    width: 92%;
+    padding: 24px 10px;
+    display: inline-flex;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 0;
+  }
+
+  .job-search-form {
+      top: 0;
+  }
 
   .center-align {
     text-align: center;
@@ -644,6 +682,56 @@ h2.left-align {
 
 @media screen and (max-width: 768px) {
 
+  .pink-bar:before {
+      display: none;
+    }
+
+  .zoeken-button {
+    position: absolute;
+    top: 257px;
+    right: 31px;
+    border: 2px solid #00182c;
+    background-color: #00182c;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .job-search-form {
+    position: relative;
+    background: #f09;
+    width: 100%;
+    top: 0;
+    bottom: 100px;
+    margin: 0 auto;
+    padding: 14px 10px 20px 10px;
+  }
+
+  .input.sector,
+  .input.regio {
+    width: 92%;
+    padding: 24px 10px;
+    display: inline-flex;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 0;
+  }
+
+  .regio {
+    margin-top: 20px;
+  }
+
+  .input {
+    width: 45%;
+    padding: 24px 10px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 0;
+  }
+
   .center-align {
     text-align: center;
     margin-top: 20px;
@@ -698,6 +786,45 @@ h2.left-align {
 
 @media screen and (max-width: 992px) {
 
+  .pink-bar:before {
+    display: none;
+  }
+
+  .zoeken-button {
+    position: absolute;
+    top: 207px;
+    right: 31px;
+    border: 2px solid #00182c;
+    background-color: #00182c;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .job-search-form {
+    position: relative;
+    background: #f09;
+    width: 100%;
+    bottom: 100px;
+    margin: 0 auto;
+    padding: 14px 10px 20px 10px;
+}
+
+  .regio {
+    margin-top: 20px;
+  }
+
+  .input {
+    width: 45%;
+    padding: 24px 10px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 0;
+  }
+
   .center-align {
     text-align: center;
     margin-top: 20px;
@@ -748,10 +875,24 @@ h2.left-align {
     width: 84%;
     margin: 0 auto;
   }
-
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
+
+ .col-md-3.left-align {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+.input {
+  width: 44%;
+  padding: 24px 10px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 0;
+}
 
 .center-align {
     text-align: center;
@@ -775,13 +916,13 @@ h2.left-align {
   }
 
   .left {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 237px;
+    padding-right: 61px;
   }
 
   .right {
-    padding-left: 45px;
-    padding-right: 45px;
+  padding-left: 61px;
+    padding-right: 237px;
   }
 
   .bottom-distance {
@@ -789,12 +930,12 @@ h2.left-align {
   }
 
   .jobs-text {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 61px;
+    padding-right: 237px;
   }
 
   .left-button {
-    padding-left: 45px;
+    padding-left: 61px;
   }
 
   .central-text h3 {
@@ -803,10 +944,30 @@ h2.left-align {
     width: 84%;
     margin: 0 auto;
   }
-
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (max-width: 1200px) {
+  .hidden-lg-small {
+    display:block;
+  }
+    .job-search-form {
+      position: relative;
+      background: #f09;
+      width: 100%;
+      bottom: 100px;
+      margin: 0 auto;
+      padding: 14px 10px 20px 10px;
+    }
+
+  .input {
+    width: 42%;
+    padding: 24px 10px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 0;
+  }
 
   .center-align {
     text-align: center;
@@ -814,7 +975,7 @@ h2.left-align {
   }
 
   .footer-list {
-    display: inline-flex;
+    display: block;
   }
 
   .subscribe-form {
@@ -858,6 +1019,197 @@ h2.left-align {
     width: 84%;
     margin: 0 auto;
   }
-
 }
 
+@media screen and (min-width: 1300px) {
+
+  .left-align {
+     text-align: left;
+    margin-top: 20px;
+  }
+
+  .footer-list {
+    display: inline-flex;
+  }
+
+  .subscribe-form {
+    border: 1px solid #ececec;
+    display: table;
+    width: 90%;
+  }
+
+  .vacancies-section {
+    font-size: 17px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .left {
+    padding-left: 237px;
+    padding-right: 61px;
+  }
+
+  .right {
+    padding-left: 61px;
+    padding-right: 237px;
+  }
+
+  .bottom-distance {
+    margin-bottom: 50px;
+  }
+
+ .jobs-text {
+    padding-left: 61px;
+    padding-right: 237px;
+  }
+
+  .left-button {
+    padding-left: 61px;
+  }
+
+  .central-text h3 {
+    color: #00182c;
+    font-weight: bold;
+    width: 84%;
+    margin: 0 auto;
+  }
+}
+
+#menu .link-item {
+  display: block;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 0px;
+  float: none;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle .language-switcher-mobile span {
+  width: auto;
+  height: auto;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 100%;
+  /*margin: -100px 0 0 -190px;*/
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(300%,0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+#menuToggle .hidden-small {
+display:none;
+}
+
+@media screen and (max-width: 1198px) {
+
+  .language-switcher {
+    right: 90px;
+  }
+  .header-section .header-menu {
+    width: 100%;
+    margin: 0;
+    right: 0;
+    top: 0;
+  }
+  #menuToggle .hidden-small {
+    display:block;
+  }
+}

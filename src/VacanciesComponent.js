@@ -10,20 +10,18 @@ class Vacancies extends Component {
               <div className="col-md-6 vacancies-section">
                 <h2 className="recent-title">recente vacatures</h2>
                 <div className="locations">
-                  <a className="pink-links">Bullman vaste namlddag!(m/v)</a>
-                  <p>Brugge - Dagwerk</p>
+                  
+                  <a className="pink-links">CNC Programmer/ Operator</a>
+                  <p>Ardooie-</p>
 
-                  <a className="pink-links">Afwasser (M/V)</a>
-                  <p>Brugge - Dagwerk</p>
+                  <a className="pink-links">2 Metal Operators</a>
+                  <p>Roeselare-Dagwerk</p>
 
-                  <a className="pink-links">Afwasser</a>
-                  <p>Zwevegem-Dagwerk</p>
+                  <a className="pink-links">Nachtreceptionist m/v</a>
+                  <p>De Haan-3 ploegenstelsel</p>
 
-                  <a className="pink-links">Metaalplooier</a>
-                  <p>Kortrijk-Dagwerk</p>
-
-                  <a className="pink-links">Installateur sanitair</a>
-                  <p>Torhout-Dagwerk</p>
+                  <a className="pink-links">Bullman vaste namiddag! (m/v)</a>
+                  <p>Wevelgem-2 ploegenstelsel</p>
 
                    <a className="pink-links">Bekijk alle vacatures</a>
                 </div>

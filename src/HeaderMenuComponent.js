@@ -14,7 +14,7 @@ class HeaderMenu extends Component {
             </div>
             <div className="col-md-6 wrapper">
                 <div className="wrap-menu open">
-                    <div className="main-menu">
+                    <div className="main-menu visible-lg">
                         <ul className="menu-list">
                             <li className="link-item"><a>over uns</a></li>
                             <li className="link-item"><a>werken bij absolute jobs</a></li>
@@ -22,8 +22,7 @@ class HeaderMenu extends Component {
                             <li className="link-item"><a>login</a></li>
                         </ul>
                     </div>
-
-                    <div className="dropdown language-switcher">
+                    <div className="dropdown language-switcher visible-lg">
                         <div className="active-lang">
                             <i className="flag flag-be"> </i>
                             <span className="label">Belgium</span>
@@ -38,10 +37,44 @@ class HeaderMenu extends Component {
                             </ul>
                         </div>
                     </div>
+                    <nav role="navigation hidden-small">
+                        <div id="menuToggle" class="hidden-small">
+                            <input type="checkbox" />
+                            {/*<div class="hamburger">*/}
+                                <span class="hidden-small"></span>
+                                <span class="hidden-small"></span>
+                                <span class="hidden-small"></span>
+                            {/*</div>*/}
+                            <ul id="menu">
+                            <li className="link-item"><a>jobs<sup>751</sup></a></li>
+                            <li className="link-item"><a>voor werknemers</a></li>
+                            <li className="link-item"><a>voor werkgevers</a></li>
+                            <li className="link-item"><a>over uns</a></li>
+                            <li className="link-item"><a>werken bij absolute jobs</a></li>
+                            <li className="link-item"><a>contact</a></li>
+                            <li className="link-item"><a>login</a></li>
+                            <li className="link-item"> <div className="dropdown language-switcher-mobile">
+                        <div className="active-lang">
+                            <i className="flag flag-be"> </i>
+                            <span className="label">Belgium</span>
+                            <i className="fa fa-caret-down"> </i>
+                        </div>
+                        <div className="dropdown-body">
+                            <ul className="langs">
+                                <li><a href="#">Belgium - NL</a></li>
+                                <li><a href="#">Belgium - EN</a></li>
+                                <li><a href="#">Romania - RO</a></li>
+                                <li><a href="#">Romania - EN</a></li>
+                            </ul>
+                        </div>
+                    </div></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
 
-            <div className="secondary-menu">
+            <div className="secondary-menu visible-lg">
                 <ul className="secondary-list">
                     <li className="link-item"><a>jobs<sup>751</sup></a></li>
                     <li className="link-item"><a>voor werknemers</a></li>
