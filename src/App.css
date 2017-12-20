@@ -599,6 +599,13 @@ h2.left-align {
 /*mobiles*/
 @media screen and (max-width: 480px) {
 
+  #root header .main-text {
+    top: 130px;
+    left: 23px;
+    width: 280px;
+    position: absolute;
+  }
+
   .pink-bar:before {
       display: none;
   }
@@ -682,6 +689,13 @@ h2.left-align {
 }
 
 @media screen and (max-width: 768px) {
+
+   header .main-text {
+    top: 154px;
+    left: 19px;
+    width: 280px;
+    position: absolute;
+  }
 
   #menu {
     text-align: left;
@@ -791,6 +805,13 @@ h2.left-align {
 }
 
 @media screen and (max-width: 992px) {
+
+  .main-text {
+    top: 211px;
+    left: 56px;
+    width: 280px;
+    position: absolute;
+  }
 
   #menu {
     text-align: left;
