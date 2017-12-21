@@ -5,6 +5,7 @@ html {
 body {
   font-family: "OpenSans", sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .app-header {
@@ -93,9 +94,11 @@ body {
   width: 50%;
 }
 
-.logo-absolute img{
+.logo-absolute img {
   max-width: 400px;
-  height: 110px;
+  height: 58px;
+  margin-top: 25px;
+  margin-left: 22px;
 }
 
 .link-item {
@@ -134,6 +137,7 @@ body {
   z-index: 1;
   cursor: pointer;
   top: 50px;
+  height: 112px;
   width: 90%;
   margin: 0 5%;
 }
@@ -370,19 +374,20 @@ h2.left-align {
 }
 
 .i {
-    display: inline-block;
-    margin-top: 20px;
-    background-color: transparent;
-    background-repeat: no-repeat;
+  display: inline-block;
+  margin-top: 20px;
+  background-color: transparent;
+  background-repeat: no-repeat;
 }
 
 .i-phone{
   width: 19px;
   height: 27px;
-  background-image: url('./phone.png');
+  background-image: url('img/phone.png');
 }
+
 .search-image {
-  background-image: url('./search.png');
+  background-image: url('img/search.png');
    background-repeat: no-repeat;
   width: 18px;
   height: 20px;
@@ -392,16 +397,16 @@ h2.left-align {
   margin-top: 11px;
 }
 .phone {
-    font-weight: bold;
-    background: #f09;
-    width: auto;
-    height: 64px;
-    padding: 20px;
-    cursor: pointer;
-    color: white;
-    font-size: 26px;
-    line-height: 64px;
-    font-family: "Futura","OpenSans",sans-serif;
+  font-weight: bold;
+  background: #f09;
+  width: auto;
+  height: 64px;
+  padding: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 26px;
+  line-height: 64px;
+  font-family: "Futura","OpenSans",sans-serif;
 }
 
 .phone:hover {
@@ -429,13 +434,13 @@ h2.left-align {
 }
 
 .i-facebook {
-    background-image: url('./facebook.png');
+    background-image: url('img/facebook.png');
     width: 100%;
     height: 23px;
 }
 
 .i-linkedin {
-    background-image: url('./linkedin.png');
+    background-image: url('img/linkedin.png');
     width: 21px;
     height: 22px;
 }
@@ -524,7 +529,7 @@ h2.left-align {
 }
 
 .flag-be {
-  background-image: url('./be.svg');
+  background-image: url('img/be.svg');
 }
 
 .label {
@@ -568,10 +573,6 @@ h2.left-align {
   color: black;
 }
 
-/*.dropdown-body {
-  display: none;
-}*/
-
 .dropdown-body ul li a:hover{
   text-decoration: none;
   color: black;
@@ -598,6 +599,372 @@ h2.left-align {
 
 /*mobiles*/
 @media screen and (max-width: 480px) {
+
+.form-link {
+  color: grey;
+}
+
+.form-link:hover {
+    color: grey;
+  }
+
+.center-list {
+  display: -webkit-inline-box;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+header .header-section .sign-section form .zoeken-button {
+  position: absolute;
+  top: 205px;
+  width: 85%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.regio {
+  margin-top: 15px;
+}
+
+.job-search-form h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.sign-section form .zoeken-button {
+  position: absolute;
+  top: 209px;
+  width: 84%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mobile-links {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: -webkit-box;
+  margin-bottom: 27px;
+}
+
+.mobile:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50;
+  left: 10px;
+  height: 1px;
+  width: 100%;
+  background: #C0C5CA;
+}
+
+.mobile-links li a{
+  list-style-type: none;
+  cursor: pointer;
+  color: grey;
+}
+
+.links {
+  display: none;
+}
+
+.mobile {
+  margin-top: 50px;
+}
+
+.title-one {
+  color: #f09;
+  font-size: 30px;
+  line-height: 58px;
+  font-weight: bold;
+  margin-top: 69px;
+  margin-bottom: 50px;
+}
+
+.background .slick-prev {
+  position: relative;
+  top: 89px;
+  z-index: 10;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-size:10px;
+}
+
+.background .slick-prev:hover {
+  position: relative;
+  top: 89px;
+  z-index: 10;
+  border: 2px solid salmon;
+  background-color: salmon;
+  color: white;
+  border-radius: 10px;
+  font-size:10px;
+}
+
+.slick-list button.slick-next {
+  float: right;
+  position: relative;
+  top: 0;
+  font-size:10px;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+.slick-next:hover {
+  float: right;
+  position: relative;
+  top: 0;
+  font-size:10px;
+  border: 2px solid salmon;
+  background-color: salmon;
+  color: white;
+  border-radius: 10px;
+}
+
+.logo-absolute {
+  text-align: left;
+  float: left;
+  width: 50%;
+}
+
+.logo-absolute img {
+  max-width: 400px;
+  height: 48px;
+  margin-top: 35px;
+  margin-left: 82px;
+}
+
+#root header .main-text {
+  top: 130px;
+  left: 23px;
+  width: 280px;
+  position: absolute;
+}
+
+.pink-bar:before {
+    display: none;
+}
+
+  button.zoeken-button {
+    position: absolute;
+    top: 305px;
+    right: 31px;
+    border: 2px solid #00182c;
+    background-color: #00182c;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .input.sector,
+  .input.regio {
+    width: 92%;
+    padding: 24px 10px;
+    display: inline-flex;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 0;
+  }
+
+  .job-search-form {
+      top: 0;
+  }
+
+  .center-align {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-list {
+    display: block;
+  }
+
+  .subscribe-form {
+    border: 1px solid #ececec;
+    display: table;
+    width: 90%;
+  }
+
+  .vacancies-section {
+    font-size: 17px;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .left {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .right {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .bottom-distance {
+    margin-bottom: 50px;
+  }
+
+  .jobs-text {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .left-button {
+    padding-left: 45px;
+  }
+
+  .central-text h3 {
+    color: #00182c;
+    font-weight: bold;
+    width: 84%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+.center-list {
+  display: -webkit-inline-box;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.form-link {
+  color: grey;
+}
+
+.form-link:hover {
+    color: grey;
+  }
+
+.regio {
+  margin-top: 15px;
+}
+
+.job-search-form h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.header-section .sign-section form .zoeken-button {
+  position: absolute;
+  top: 205px;
+  width: 89%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mobile-links {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: -webkit-box;
+  margin-bottom: 27px;
+}
+
+.mobile:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50;
+  left: 10px;
+  height: 1px;
+  width: 100%;
+  background: #C0C5CA;
+}
+
+.mobile-links li a{
+  list-style-type: none;
+  cursor: pointer;
+  color: grey;
+}
+
+.links {
+  display: none;
+}
+
+.mobile {
+  margin-top: 50px;
+}
+
+.title-one {
+  color: #f09;
+  font-size: 30px;
+  line-height: 58px;
+  font-weight: bold;
+  margin-top: 69px;
+  margin-bottom: 50px;
+}
+
+.background .slick-prev {
+  position: relative;
+  top: 185px;
+  z-index: 10;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-size:10px;
+}
+
+.background .slick-prev:hover {
+  position: relative;
+  top: 185px;
+  z-index: 10;
+  border: 2px solid salmon;
+  background-color: salmon;
+  color: white;
+  border-radius: 10px;
+  font-size:10px;
+}
+
+.slick-next {
+  float: right;
+  position: relative;
+  top: 0;
+  font-size:10px;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+.slick-next:hover {
+  float: right;
+  position: relative;
+  top: 0;
+  font-size:10px;
+  border: 2px solid salmon;
+  background-color: salmon;
+  color: white;
+  border-radius: 10px;
+}
+
+.logo-absolute {
+  text-align: left;
+  float: left;
+  width: 50%;
+}
+
+.logo-absolute img {
+  max-width: 400px;
+  height: 48px;
+  margin-top: 35px;
+  margin-left: 82px;
+}
 
   #root header .main-text {
     top: 130px;
@@ -688,27 +1055,162 @@ h2.left-align {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  
+  .form-link {
+    color: grey;
+  }
 
-   header .main-text {
-    top: 154px;
-    left: 19px;
+  .form-link:hover {
+    color: grey;
+  }
+
+  .center-list {
+    display: -webkit-inline-box;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+
+  .center-list {
+    display: -webkit-inline-box;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+
+  .regio {
+    margin-top: 15px;
+  }
+
+  .job-search-form h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.sign-section form .zoeken-button {
+  position: absolute;
+  top: 190px;
+  width: 84%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mobile-links {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: -webkit-box;
+  margin-bottom: 27px;
+}
+
+.mobile:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50;
+  left: 10px;
+  height: 1px;
+  width: 100%;
+  background: #C0C5CA;
+}
+
+.mobile-links li a{
+  list-style-type: none;
+  cursor: pointer;
+  color: grey;
+}
+
+
+.links {
+  display: none;
+}
+
+.mobile {
+  margin-top: 50px;
+}
+
+.title-one {
+  color: #f09;
+  font-size: 30px;
+  line-height: 58px;
+  font-weight: bold;
+  margin-top: 69px;
+  margin-bottom: 50px;
+}
+
+.background .slick-prev {
+  position: relative;
+  top: 185px;
+  z-index: 10;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-size:10px;
+}
+
+.background .slick-prev:hover {
+  position: relative;
+  top: 185px;
+  z-index: 10;
+  border: 2px solid salmon;
+  background-color: salmon;
+  color: white;
+  border-radius: 10px;
+  font-size:10px;
+}
+
+.slick-next {
+  float: right;
+  position: relative;
+  top: 0;
+  font-size:10px;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+.slick-next:hover {
+  float: right;
+  position: relative;
+  top: 0;
+  font-size:10px;
+  border: 2px solid salmon;
+  background-color: salmon;
+  color: white;
+  border-radius: 10px;
+}
+
+.logo-absolute {
+  text-align: left;
+  float: left;
+  width: 50%;
+}
+
+.logo-absolute img {
+  max-width: 400px;
+  height: 48px;
+  margin-top: 35px;
+  margin-left: 82px;
+}
+
+  #root header .main-text {
+    top: 130px;
+    left: 23px;
     width: 280px;
     position: absolute;
   }
 
-  #menu {
-    text-align: left;
-    padding-left: 15px;
-  }
-
   .pink-bar:before {
       display: none;
-    }
+  }
 
-  form .zoeken-button {
+  button.zoeken-button {
     position: absolute;
-    top: 247px;
+    top: 305px;
     right: 31px;
     border: 2px solid #00182c;
     background-color: #00182c;
@@ -716,16 +1218,6 @@ h2.left-align {
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
-  }
-
-  .job-search-form {
-    position: relative;
-    background: #f09;
-    width: 100%;
-    top: 0;
-    bottom: 100px;
-    margin: 0 auto;
-    padding: 14px 10px 20px 10px;
   }
 
   .input.sector,
@@ -738,123 +1230,8 @@ h2.left-align {
     border-radius: 0;
   }
 
-  .regio {
-    margin-top: 20px;
-  }
-
-  .input {
-    width: 45%;
-    padding: 24px 10px;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin-right: 15px;
-    margin-left: 15px;
-    border-radius: 0;
-  }
-
-  .center-align {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .footer-list {
-    display: block;
-  }
-
-  .subscribe-form {
-    border: 1px solid #ececec;
-    display: table;
-    width: 90%;
-  }
-
-  .vacancies-section {
-    font-size: 17px;
-    padding-top: 0;
-    margin-bottom: 50px;
-  }
-
-  .left {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  .right {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  .bottom-distance {
-    margin-bottom: 50px;
-  }
-
-  .jobs-text {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  .left-button {
-    padding-left: 45px;
-  }
-
-  .central-text h3 {
-    color: #00182c;
-    font-weight: bold;
-    width: 84%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 992px) {
-
-  .main-text {
-    top: 211px;
-    left: 56px;
-    width: 280px;
-    position: absolute;
-  }
-
-  #menu {
-    text-align: left;
-    padding-left: 15px;
-  }
-
-  .pink-bar:before {
-    display: none;
-  }
-
-  .zoeken-button {
-    position: absolute;
-    top: 199px;
-    right: 31px;
-    border: 2px solid #00182c;
-    background-color: #00182c;
-    color: white;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
   .job-search-form {
-    position: relative;
-    background: #f09;
-    width: 100%;
-    bottom: 100px;
-    margin: 0 auto;
-    padding: 14px 10px 20px 10px;
-  }
-
-  .regio {
-    margin-top: 20px;
-  }
-
-  .input {
-    width: 45%;
-    padding: 24px 10px;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin-right: 15px;
-    margin-left: 15px;
-    border-radius: 0;
+      top: 0;
   }
 
   .center-align {
@@ -911,15 +1288,31 @@ h2.left-align {
 
 @media screen and (min-width: 1200px) {
 
+  .background button.slick-prev {
+    position: relative;
+    top: 791px;
+    border: 2px solid red;
+    color: white;
+    background-color: red;
+  }
+
+  .regio {
+    margin-top: 15px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   #menu {
     text-align: left;
     padding-left: 15px;
   }
 
   .col-md-3.left-align {
-      text-align: left;
-      margin-top: 20px;
-    }
+    text-align: left;
+    margin-top: 20px;
+  }
 
   .input {
     width: 44%;
@@ -984,6 +1377,23 @@ h2.left-align {
 }
 
 @media screen and (max-width: 1200px) {
+
+  .center-list {
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+
+  .form-link {
+    color: grey;
+  }
+
+  .form-link:hover {
+    color: grey;
+  }
+
+  .regio {
+    margin-top: 15px;
+  }
 
   .fa {
     font-size: 15px;
@@ -1134,9 +1544,220 @@ h2.left-align {
     width: 84%;
     margin: 0 auto;
   }
+
+  .job-search-form h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  .sign-section form .zoeken-button {
+    position: absolute;
+    top: 208px;
+    width: 85%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .mobile-links {
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 14px;
+    display: -webkit-box;
+    margin-bottom: 27px;
+  }
+
+  .mobile:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50;
+    left: 10px;
+    height: 1px;
+    width: 100%;
+    background: #C0C5CA;
+  }
+
+  .mobile-links li a{
+    list-style-type: none;
+    cursor: pointer;
+    color: grey;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .mobile {
+    margin-top: 90px;
+  }
+
+  .title-one {
+    color: #f09;
+    font-size: 30px;
+    line-height: 58px;
+    font-weight: bold;
+    margin-top: 69px;
+    margin-bottom: 50px;
+  }
+
+  .background .slick-prev {
+    position: relative;
+    top: 89px;
+    z-index: 10;
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-size:10px;
+  }
+
+  .background .slick-prev:hover {
+    position: relative;
+    top: 89px;
+    z-index: 10;
+    border: 2px solid salmon;
+    background-color: salmon;
+    color: white;
+    border-radius: 10px;
+    font-size:10px;
+  }
+
+  .slick-next {
+    float: right;
+    position: relative;
+    top: 0;
+    font-size:10px;
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .slick-next:hover {
+    float: right;
+    position: relative;
+    top: 0;
+    font-size:10px;
+    border: 2px solid salmon;
+    background-color: salmon;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .logo-absolute {
+    text-align: left;
+    float: left;
+    width: 50%;
+  }
+
+  .logo-absolute img {
+    max-width: 400px;
+    height: 48px;
+    margin-top: 35px;
+    margin-left: 82px;
+  }
+
+  #root header .main-text {
+    top: 130px;
+    left: 23px;
+    width: 280px;
+    position: absolute;
+  }
+
+  .pink-bar:before {
+    display: none;
+  }
+
+  button.zoeken-button {
+    position: absolute;
+    top: 305px;
+    right: 31px;
+    border: 2px solid #00182c;
+    background-color: #00182c;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .input.sector,
+  .input.regio {
+    width: 92%;
+    padding: 24px 10px;
+    display: inline-flex;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 0;
+  }
+
+  .job-search-form {
+      top: 0;
+  }
+
+  .center-align {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-list {
+    display: block;
+  }
+
+  .subscribe-form {
+    border: 1px solid #ececec;
+    display: table;
+    width: 90%;
+  }
+
+  .vacancies-section {
+    font-size: 17px;
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .left {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .right {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .bottom-distance {
+    margin-bottom: 50px;
+  }
+
+  .jobs-text {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .left-button {
+    padding-left: 45px;
+  }
+
+  .central-text h3 {
+    color: #00182c;
+    font-weight: bold;
+    width: 84%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1300px) {
+
+  .background button.slick-prev {
+    position: relative;
+    top: 1055px;
+    border: 2px solid red;
+    color: white;
+    background-color: red;
+  }
 
   .left-align {
     text-align: left;
@@ -1144,7 +1765,7 @@ h2.left-align {
   }
 
   .footer-list {
-    display: inline-flex;
+    display: -webkit-box;
   }
 
   .subscribe-form {
@@ -1249,7 +1870,7 @@ h2.left-align {
   transform-origin: 0% 100%;
 }
 
-/* 
+/*
  * Transform all the slices of hamburger
  * into a crossmark.
  */
@@ -1283,14 +1904,14 @@ h2.left-align {
   width: 100%;
   padding-left: 4px;
   padding-top: 125px;
-  
+
   background: #00182c;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
   transform-origin: 0% 0%;
   transform: translate(300%,0);
-  
+
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
@@ -1315,13 +1936,32 @@ display:none;
   .language-switcher {
     right: 90px;
   }
+
   .header-section .header-menu {
     width: 100%;
     margin: 0;
     right: 0;
     top: 0;
   }
+
   #menuToggle .hidden-small {
     display:block;
   }
+}
+
+button.slick-next {
+  float: right;
+  position: relative;
+  bottom: 0;
+  border: 2px solid red;
+  color: white;
+  background-color: red;
+}
+
+button.slick-prev {
+  position: relative;
+  top: 1055px;
+  border: 2px solid red;
+  color: white;
+  background-color: red;
 }

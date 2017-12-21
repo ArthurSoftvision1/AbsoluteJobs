@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, {Component} from 'react';
+import '../../styles/App.css';
 
-class BodyText extends Component {
+export default class BodyText extends Component {
   render() {
     return (
       <div className="body-text">
@@ -10,5 +10,3 @@ class BodyText extends Component {
     );
   }
 }
-
-export default BodyText;
